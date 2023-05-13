@@ -68,6 +68,9 @@ function draw() {
             score++;
             score_audio.play();
         }
+        if (pipe.length > 2){
+            pipe.shift()
+        }
     }
     
     ctx.drawImage(fg, 0, cvs.height - fg.height);
